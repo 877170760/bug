@@ -1,9 +1,11 @@
 <template>
   <div class="tab">
     <div class="left">
+    //问题部分，多地方公用无法拖动
       <van-tabs @click="onClick"  v-model="tabindex">
        <van-tab v-for="(item, index) in tabList" :name="index"  :key="index" :title="item.mobileColumnName"></van-tab>
       </van-tabs>
+      //
     </div>
     <div class="right" @click="goSubscribe(siteCollectionId)">
       <img :src="imgUrl" alt="">
